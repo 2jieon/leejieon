@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>이지언</title>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.473/build/spline-viewer.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/header.css"><!-- header.css -->
+  <link rel="stylesheet" type="text/css" href="css/common.css"><!-- common.css -->
+  <link rel="stylesheet" type="text/css" href="css/project.css"><!-- project.css -->
+  <link rel="stylesheet" type="text/css" href="css/footer.css"><!-- footer.css -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="fonts/fonts.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/default.css"> -->
+
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script><!-- wow 애니메이션 -->
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/gsap.min.js"></script><!-- gsap 애니메이션 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script><!-- gsap 애니메이션 -->
+
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
+  <script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/aos.js"></script>
+</head>
+
+<body class="home page-template-default page page-id-20">
+
+  <div id="page" class="site">
+
+    <header id="header"></header><!-- #act_header -->
+
+    <div class="site-content-container">
+      <div id="content" class="site-content">
+        <div class="wrap">
+          <section class="designer-wrap projects-wrap">
+            
+            <!-- inner -->
+            <!-- inner -->
+            <div class="inner">
+              <div class="designer_head">
+                <h3>Portfolio List</h3>
+                <p>개인작업물 리스트입니다.</p>
+              </div>
+
+              <!-- tab_wrap -->
+              <!-- tab_wrap -->
+              <div class="tab_wrap">
+                <ul class="tabs filter_wrap">
+                    <li class="tab-link current" data-tab="tab-1">Mobile Design</li>
+                    <li class="tab-link" data-tab="tab-2">Web Design</li>
+                    <li class="tab-link" data-tab="tab-3">Graphic Design</li>
+                </ul>
+
+                <!-- tab-1 -->
+                <!-- tab-1 -->
+                <div id="tab-1" class="tab-content current">
+                  <ul class="prejects_body">
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal1');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/portfolio/sub01.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            YG KPLUS
+                            <mark>모바일앱</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal1">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <!-- <a href="http://success-camp.com/" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>YG KPLUS</h4>
+                                <p>모바일앱 시안 제작(2시간 소요)</p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 100%</span>
+                                <span class="tag">디자인 100%</span>
+                                <span class="tag bg_gray">포토샵</span>
+                                <span class="tag bg_gray">일러스트</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt" style="text-align: center;">
+                              <img src="images/portfolio/sub01_2.png" alt=""></br></br></br>
+                              <img src="images/portfolio/sub01_3.png" alt="" style="max-width: 400px;">
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal2');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/portfolio/sub02.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            쿠팡
+                            <mark>모바일앱</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal2">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <!-- <a href="http://success-camp.com/" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>쿠팡</h4>
+                                <p>모바일앱 시안 제작(3시간 소요)</p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 100%</span>
+                                <span class="tag">디자인 100%</span>
+                                <span class="tag bg_gray">포토샵</span>
+                                <span class="tag bg_gray">일러스트</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt" style="text-align: center;">
+                              <img src="images/portfolio/sub02_2.png" alt=""></br></br></br>
+                              <img src="images/portfolio/sub02_3.png" alt="" style="max-width: 400px; border: 1px solid #ddd;">
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+                    
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal3');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/portfolio/sub03.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            캘로그
+                            <mark>모바일앱</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal3">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <!-- <a href="http://success-camp.com/" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>캘로그</h4>
+                                <p>모바일앱 시안 제작(2시간 소요)</p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 100%</span>
+                                <span class="tag">디자인 100%</span>
+                                <span class="tag bg_gray">포토샵</span>
+                                <span class="tag bg_gray">일러스트</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt" style="text-align: center;">
+                              <img src="images/portfolio/sub03_2.png" alt=""></br></br></br>
+                              <img src="images/portfolio/sub03_3.png" alt="" style="max-width: 400px; border: 1px solid #ddd;">
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- tab-1 -->
+                <!-- tab-1 -->
+
+
+                <!-- tab-2 -->
+                <!-- tab-2 -->
+                <div id="tab-2" class="tab-content">
+                  <ul class="prejects_body">
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal4');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/portfolio/sub10.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            삼성금융
+                            <mark>사이트 리디자인</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal4">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="https://2jieon.github.io/samsung" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>삼성금융</h4>
+                                <p>삼성금융 사이트 리디자인 입니다.(약 8시간 소요)
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 100%</span>
+                                <span class="tag">디자인 100%</span>
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">PC전용</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <img src="images/portfolio/sub10_2.png" alt="조야팝업 이미지"></br></br></br>
+                              <img src="images/portfolio/sub10_3.png" alt="조야팝업 이미지">
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+    
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal5');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/portfolio/sub11.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            쌍용건설
+                            <mark>사이트 리디자인</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal5">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="https://2jieon.github.io/ssangyoung/" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>쌍용건설</h4>
+                                <p>쌍용건설 사이트 리디자인 입니다.(약 6시간 소요)
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 100%</span>
+                                <span class="tag">디자인 100%</span>
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">PC전용</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <img src="images/portfolio/sub11_2.png" alt="조야팝업 이미지"></br></br></br>
+                              <img src="images/portfolio/sub11_3.png" alt="조야팝업 이미지">
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- tab-2 -->
+                <!-- tab-2 -->
+
+
+                <!-- tab-3 -->
+                <!-- tab-3 -->
+                <div id="tab-3" class="tab-content">
+                  <ul class="prejects_body">
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal6');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/portfolio/sub20.jpg" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            인테리어 3D 모델링
+                            <mark>3D MAX</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal6">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="https://2jieon.github.io/ssangyoung/" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>인테리어 3D 모델링</h4>
+                                <p>3D MAX를 이용한 3D 모델링 입니다.
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">디자인 100%</span>
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">3D Max</span>
+                                <span class="tag bg_gray">V-ray</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <img src="images/portfolio/sub20_2.png" alt="조야팝업 이미지">
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal7');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/portfolio/sub21.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            3D 그래픽 디자인
+                            <mark>Spline</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal7">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <!-- <a href="https://moti.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>3D 그래픽 디자인</h4>
+                                <p>Spline을 이용한 3D 그래픽 디자인
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">Spline</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <!-- <img src="images/portfolio/sub21.png" alt="3D 이미지"> -->
+                              <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.490/build/spline-viewer.js"></script>
+                              <spline-viewer loading-anim url="https://prod.spline.design/7hRycUe05qfRDYSw/scene.splinecode"></spline-viewer>
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- tab-3 -->
+                <!-- tab-3 -->
+
+              </div>
+              <!-- tab_wrap -->
+              <!-- tab_wrap -->
+
+
+            </div>
+            <!-- inner -->
+            <!-- inner -->
+
+          </section>
+        </div><!-- .wrap -->
+
+        <div id="container_layer_alert">
+          <footer id="footer" class="footer"></footer><!-- #act_footer -->
+        </div><!-- layout_alert -->
+
+      </div><!-- #content -->  
+    </div><!-- .site-content-container -->  
+  </div><!-- #page -->
+
+
+  
+
+
+
+  <script>
+  //팝업 열기
+  function openModal(modal1) {
+    document.get
+    $("." + modal1).fadeIn(300);
+  }
+  function openModal(modal2) {
+    document.get
+    $("." + modal2).fadeIn(300);
+  }
+  function openModal(modal3) {
+    document.get
+    $("." + modal3).fadeIn(300);
+  }
+  function openModal(modal4) {
+    document.get
+    $("." + modal4).fadeIn(300);
+  }
+  function openModal(modal5) {
+    document.get
+    $("." + modal5).fadeIn(300);
+  }
+  function openModal(modal6) {
+    document.get
+    $("." + modal6).fadeIn(300);
+  }
+  function openModal(modal7) {
+    document.get
+    $("." + modal7).fadeIn(300);
+  }
+  function openModal(modal8) {
+    document.get
+    $("." + modal8).fadeIn(300);
+  }
+  function openModal(modal9) {
+    document.get
+    $("." + modal9).fadeIn(300);
+  }
+  function openModal(modal10) {
+    document.get
+    $("." + modal10).fadeIn(300);
+  }
+  function openModal(modal11) {
+    document.get
+    $("." + modal11).fadeIn(300);
+  }
+  function openModal(modal12) {
+    document.get
+    $("." + modal12).fadeIn(300);
+  }
+  function openModal(modal13) {
+    document.get
+    $("." + modal13).fadeIn(300);
+  }
+  
+  
+  // 팝업 닫기
+  $('.popup .close').click(function() {
+      $(this).parent().fadeOut(300);
+  });
+
+
+  //탭버튼
+  const tabList = document.querySelectorAll('.tab_menu .list li');
+  $(document).ready(function(){
+    $('ul.tabs li').click(function(){
+      var tab_id = $(this).attr('data-tab');
+
+      $('ul.tabs li').removeClass('current');
+      $('.tab-content').removeClass('current');
+
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    });
+  });
+
+  $("#header").load("/html/header.html");//헤더를 불러오는 스크립트
+  $("#footer").load("/html/footer.html");//푸터를 불러오는 스크립트
+  </script>
+
+
+</body>
+</html>

@@ -1,0 +1,918 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+  
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <title>이지언</title>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@0.9.473/build/spline-viewer.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/header.css"><!-- header.css -->
+  <link rel="stylesheet" type="text/css" href="css/common.css"><!-- common.css -->
+  <link rel="stylesheet" type="text/css" href="css/project.css"><!-- project.css -->
+  <link rel="stylesheet" type="text/css" href="css/footer.css"><!-- footer.css -->
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <!-- <link rel="stylesheet" type="text/css" href="css/animate.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="fonts/fonts.css"> -->
+  <!-- <link rel="stylesheet" type="text/css" href="css/default.css"> -->
+
+  <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="js/main.js"></script>
+  <script type="text/javascript" src="js/wow.min.js"></script><!-- wow 애니메이션 -->
+  <script type="text/javascript" src="js/slick.min.js"></script>
+  <script src="js/gsap.min.js"></script><!-- gsap 애니메이션 -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script><!-- gsap 애니메이션 -->
+
+  <link rel="stylesheet" type="text/css" href="css/aos.css">
+  <script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/aos.js"></script>
+</head>
+
+<body class="home page-template-default page page-id-20">
+
+  <div id="page" class="site">
+
+    <header id="header"></header><!-- #act_header -->
+
+    <div class="site-content-container">
+      <div id="content" class="site-content">
+        <div class="wrap">
+          <section class="designer-wrap projects-wrap">
+            
+            <!-- inner -->
+            <!-- inner -->
+            <div class="inner">
+              <div class="designer_head">
+                <h3>Project List</h3>
+                <p>실무작업물 리스트입니다. 운영 중인 사이트로 도메인 및 디자인이 변경될 수 있습니다.</p>
+              </div>
+
+              <!-- tab_wrap -->
+              <!-- tab_wrap -->
+              <div class="tab_wrap">
+                <ul class="tabs filter_wrap">
+                    <li class="tab-link current" data-tab="tab-1">Web Publishing</li>
+                    <li class="tab-link" data-tab="tab-2">Graphic Design</li>
+                    <li class="tab-link" data-tab="tab-3">Interior Design</li>
+                </ul>
+
+                <!-- tab-1 -->
+                <!-- tab-1 -->
+                <div id="tab-1" class="tab-content current">
+                  <ul class="prejects_body">
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal1');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub01.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            가나안석세스아카데미
+                            <mark>팀 프로젝트</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal1">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="http://success-camp.com/" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>가나안석세스아카데미</h4>
+                                <p>기획단계에서는 마케팅팀과 협력하여 작업하였습니다. (2023년 終/약 1개월 소요)</p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 70%</span>
+                                <span class="tag">디자인 90%</span>
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                                <span class="tag bg_gray">로고디자인</span>
+                              </div>
+                            </div>
+                            <img src="images/project/sub01_2.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal2');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub02.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            테솔컬리지
+                            <mark>팀 프로젝트(+와이어 프레임)</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal2">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="https://tesolcollege.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>테솔컬리지</h4>
+                                <p>영상수업, 온라인 테스트, 개인별 수업진행률, 선생님 전용 페이지 등 개발이 필요한 부분은 개발팀과 협력하였습니다. (2023년 終/약 3개월 소요)</p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 90%</span>
+                                <span class="tag">디자인 70%</span>
+                                <span class="tag">구현 80%</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>메인 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub02_2.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>수강안내 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub02_3.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>마이페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub02_4.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>나의강의실 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub02_5.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>모듈별 문제은행 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub02_6.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>수강후기 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub02_7.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>문제은행 작성 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub02_8.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>메인페이지 구현 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub02_9.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+                    
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal3');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub03.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            바이스앤(대구)
+                            <mark>팀 프로젝트</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal3">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="http://visen.makorang.com" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>바이스앤(대구)</h4>
+                                <p>디자인팀 공동 작업 (2021년 終/약 2주 소요)</p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 80%</span>
+                                <span class="tag">디자인 70%</span>
+                                <span class="tag">구현 80%</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <img src="images/project/sub03_2.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal4');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub04.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            세화병원
+                            <mark>팀 프로젝트</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal4">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="http://www.swmedi.com" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>세화병원</h4>
+                                <p>주로 사이트 유지보수 및 이벤트 배너를 제작했습니다.</p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">유지보수</span>
+                                <span class="tag">배너제작</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <img src="images/project/sub04_2.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal5');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub05.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            미테크성형외과
+                            <mark>팀 프로젝트</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal5">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="http://www.metechps.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>미테크성형외과</h4>
+                                <p>저는 '성형/재건' 중 '성형'페이지를 주로 작업하였습니다.
+                                  <br>(2023년 終/약 1개월 소요)
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 30%</span>
+                                <span class="tag">디자인 80%</span>
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>성형 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub05_2.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>재건 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub05_3.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal6');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub06.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            고은사진미술관
+                            <mark>팀 프로젝트(+APP)</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal6">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="https://www.goeunmuseum.kr/" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>고은사진미술관</h4>
+                                <p>이달의 공연, 예정공연 페이지는 개발팀과 협력하였습니다. (2023년 終/앱 포함 약 3개월 소요)
+                                  <br>
+                                  <a href="https://play.google.com/store/apps/details?id=com.goeunmuseum&pli=1" target="_blank" 
+                                    style="font-family: 'GmarketSansMedium'; width: auto; height: 40px; padding: 0 20px; background: #a3bdfb;
+                                    color: #fff; border-radius: 30px; font-size: 16px; display: inline-block; line-height: 43px; margin-top: 10px;">
+                                    앱 다운로드 >
+                                  </a>
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 70%</span>
+                                <span class="tag">디자인 80%</span>
+                                <span class="tag">구현 80%</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>메인 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub06_2.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>지난공연 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub06_3.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>이전전시 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub06_4.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal7');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub07.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            부산광역시 구 봉사센터
+                            <mark>팀 프로젝트</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal7">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="https://gj1365.or.kr" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>부산광역시 구 봉사센터</h4>
+                                <p>금정구(대표) · 북구 · 동구 · 서구 · 진구 봉사센터 홈페이지를 제작했으며 수요처신청 · 봉사단체신청 · 보고서제출 페이지는 개발팀과 협력하여 작업했습니다.
+                                  <br>(2022년 終/모든 구 홈페이지 제작에 약 4개월 소요)
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 30%</span>
+                                <span class="tag">디자인 40%</span>
+                                <span class="tag">구현 50%</span>
+                                <span class="tag bg_gray">개발자협업</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>메인 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub07_2.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>재능나눔 봉사 등록 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub07_3.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal8');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub08.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            라이카해운대스토어
+                            <mark>팀 프로젝트</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal8">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="https://www.leica-store-haeundae.kr" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>라이카해운대스토어</h4>
+                                <p>쇼핑몰 사이트로 판매관리자 페이지, 결제페이지 등 개발이 필요한 부분은 개발팀과 협력하여 작업했습니다.
+                                  <br>(2022년 終/약 2개월 소요)
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 60%</span>
+                                <span class="tag">디자인 90%</span>
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">개발자협업</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>메인 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub08_2.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>카메라 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub08_3.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal9');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub09.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            인정후라이드
+                            <mark>팀 프로젝트</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal9">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="http://ijchicken.com" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>인정후라이드</h4>
+                                <p>브랜드소개 홈페이지
+                                  <br>(2023년 終/약 1주 소요)
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 60%</span>
+                                <span class="tag">디자인 90%</span>
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>메인 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub09_2.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>상품리스트 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub09_3.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal10');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub10.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            MOTI
+                            <mark>팀 프로젝트</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal10">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <a href="https://moti.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a>
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>MOTI</h4>
+                                <p>쇼핑몰 사이트입니다.
+                                  <br>(2022년 終/약 2개월 소요)
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 90%</span>
+                                <span class="tag">디자인 90%</span>
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>메인 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub10_2.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>상품상세 페이지 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub10_3.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- tab-1 -->
+                <!-- tab-1 -->
+
+
+                <!-- tab-2 -->
+                <!-- tab-2 -->
+                <div id="tab-2" class="tab-content">
+                  <ul class="prejects_body">
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal11');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub20.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            조야슈즈
+                            <mark>이벤트 팝업/배너</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal11">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <!-- <a href="https://moti.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                        <div id="modalBody" class="modalBody2">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <!-- <div class="modal_tit">
+                                <h4>MOTI</h4>
+                                <p>쇼핑몰 사이트입니다.
+                                  <br>(2022년 終/약 2개월 소요)
+                                </p>
+                              </div> -->
+                              <img src="images/project/sub20_2.jpg" alt="조야팝업 이미지"></br></br></br>
+                              <img src="images/project/sub20_2_2.jpg" alt="조야배너 이미지"></br></br></br>
+
+                              <img src="images/project/sub20_3.jpg" alt="조야팝업 이미지"></br></br></br>
+                              <img src="images/project/sub20_3_2.jpg" alt="조야배너 이미지"></br></br></br>
+
+                              <img src="images/project/sub20_4.jpg" alt="조야팝업 이미지"></br></br></br>
+                              <img src="images/project/sub20_4_2.jpg" alt="조야배너 이미지"></br></br></br>
+
+                              <img src="images/project/sub20_5.jpg" alt="조야팝업 이미지"></br></br></br>
+                              <img src="images/project/sub20_6.jpg" alt="조야배너 이미지">
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+    
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal12');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub21.jpg" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            옥외광고
+                            <mark>부산시 시민게시판 광고 제작/발주</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal12">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <!-- <a href="https://moti.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                        <div id="modalBody" class="modalBody2">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <!-- <div class="modal_tit">
+                                <h4>MOTI</h4>
+                                <p>쇼핑몰 사이트입니다.
+                                  <br>(2022년 終/약 2개월 소요)
+                                </p>
+                              </div> -->
+                              <img src="images/project/sub21.jpg" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/project/sub21_9.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/project/sub21_2.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/project/sub21_3.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/project/sub21_4.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/project/sub21_5.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/project/sub21_6.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/project/sub21_7.png" alt="옥외광고 이미지"></br></br></br>
+                              <img src="images/project/sub21_8.png" alt="옥외광고 이미지">
+                            </div>
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- tab-2 -->
+                <!-- tab-2 -->
+
+
+                <!-- tab-3 -->
+                <!-- tab-3 -->
+                <div id="tab-3" class="tab-content">
+                  <ul class="prejects_body">
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal13');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub30.png" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            KNN
+                            <mark>방송국 디자인</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal13">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <!-- <a href="https://moti.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>KNN</h4>
+                                <p>KNN 라디오 방송국 디자인 및 현장관리
+                                  <br>(약 1개월 소요)
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">설계 30%</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>현장사진 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub30_2.jpg" alt="">
+                            <img src="images/project/sub30_3.jpg" alt="">
+                            <img src="images/project/sub30_4.jpg" alt="">
+                            <img src="images/project/sub30_5.jpg" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>설계도면 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub30_6.png" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+
+
+                    <li class="is-new">
+                      <a href="javascript:openModal('modal14');" id="popupBtn01">
+                        <p class="top">
+                          <img src="images/project/sub31.jpg" alt="">
+                        </p>
+                        <p class="bot">
+                          <span class="tit">
+                            제주신화테마파크
+                            <mark>YG리퍼블릭/테마파크 디자인</mark>
+                          </span>
+                          <button class="arrow"></button>
+                        </p>
+                      </a>
+                      <!-- 모달창 -->
+                      <div id="modalWrap" class="popup modal14">
+                        <span id="closeBtn" class="close">&times;</span>
+                        <!-- <a href="https://moti.co.kr" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+                        <div id="modalBody">
+                          <div class="modal">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>제주신화테마파크</h4>
+                                <p>1, 2공구 테마파크, YG리퍼블릭 디자인 담당
+                                  <br>(약 1년 이상 소요)
+                                </p>
+                              </div>
+                              <div class="hash_list">
+                                <span class="tag">기획 90%</span>
+                                <span class="tag">디자인 90%</span>
+                                <span class="tag">구현 100%</span>
+                                <span class="tag bg_gray">반응형</span>
+                                <span class="tag bg_gray">그누보드</span>
+                              </div>
+                            </div>
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>설계도 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub31_3.png" alt="">
+                            <img src="images/project/sub31_4.png" alt="">
+                            <img src="images/project/sub31_5.png" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>현장사진 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub31_6.jpg" alt="">
+                            <img src="images/project/sub31_7.jpg" alt="">
+                            <img src="images/project/sub31_8.jpg" alt="">
+                            <img src="images/project/sub31_9.jpg" alt="">
+                            <img src="images/project/sub31_12.jpg" alt="">
+                            <div class="modal_txt">
+                              <div class="modal_tit">
+                                <h4>마감재컨펌 보드 ↓</h4>
+                              </div>
+                            </div>
+                            <img src="images/project/sub31_10.png" alt="">
+                            <img src="images/project/sub31_11.jpg" alt="">
+                          </div>
+                        </div>
+                      </div><!-- 모달창 끝 -->
+                    </li>
+                  </ul>
+                </div>
+                <!-- tab-3 -->
+                <!-- tab-3 -->
+
+              </div>
+              <!-- tab_wrap -->
+              <!-- tab_wrap -->
+
+
+            </div>
+            <!-- inner -->
+            <!-- inner -->
+
+          </section>
+        </div><!-- .wrap -->
+
+        <div id="container_layer_alert">
+          <footer id="footer" class="footer"></footer><!-- #act_footer -->
+        </div><!-- layout_alert -->
+
+      </div><!-- #content -->  
+    </div><!-- .site-content-container -->  
+  </div><!-- #page -->
+
+
+  
+
+
+
+  <script>
+  //팝업 열기
+  function openModal(modal1) {
+    document.get
+    $("." + modal1).fadeIn(300);
+  }
+  function openModal(modal2) {
+    document.get
+    $("." + modal2).fadeIn(300);
+  }
+  function openModal(modal3) {
+    document.get
+    $("." + modal3).fadeIn(300);
+  }
+  function openModal(modal4) {
+    document.get
+    $("." + modal4).fadeIn(300);
+  }
+  function openModal(modal5) {
+    document.get
+    $("." + modal5).fadeIn(300);
+  }
+  function openModal(modal6) {
+    document.get
+    $("." + modal6).fadeIn(300);
+  }
+  function openModal(modal7) {
+    document.get
+    $("." + modal7).fadeIn(300);
+  }
+  function openModal(modal8) {
+    document.get
+    $("." + modal8).fadeIn(300);
+  }
+  function openModal(modal9) {
+    document.get
+    $("." + modal9).fadeIn(300);
+  }
+  function openModal(modal10) {
+    document.get
+    $("." + modal10).fadeIn(300);
+  }
+  function openModal(modal11) {
+    document.get
+    $("." + modal11).fadeIn(300);
+  }
+  function openModal(modal12) {
+    document.get
+    $("." + modal12).fadeIn(300);
+  }
+  function openModal(modal13) {
+    document.get
+    $("." + modal13).fadeIn(300);
+  }
+  
+  
+  // 팝업 닫기
+  $('.popup .close').click(function() {
+      $(this).parent().fadeOut(300);
+  });
+
+
+  //탭버튼
+  const tabList = document.querySelectorAll('.tab_menu .list li');
+  $(document).ready(function(){
+    $('ul.tabs li').click(function(){
+      var tab_id = $(this).attr('data-tab');
+
+      $('ul.tabs li').removeClass('current');
+      $('.tab-content').removeClass('current');
+
+      $(this).addClass('current');
+      $("#"+tab_id).addClass('current');
+    });
+  });
+
+  $("#header").load("/html/header.html");//헤더를 불러오는 스크립트
+  $("#footer").load("/html/footer.html");//푸터를 불러오는 스크립트
+  </script>
+
+
+</body>
+</html>

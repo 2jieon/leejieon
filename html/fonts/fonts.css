@@ -1,0 +1,141 @@
+/*나눔스퀘어*/
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 100;
+    src: local('NanumSquare'),
+        url('NanumSquareL.woff2') format('woff2'), 
+        url('NanumSquareL.woff') format('woff'),
+        url('NanumSquareL.ttf') format('truetype'),
+        url('NanumSquareL.otf') format('opentype'),
+        url('NanumSquareL.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NanumSquare'),
+        url('NanumSquareR.woff2') format('woff2'), 
+        url('NanumSquareR.woff') format('woff'),
+        url('NanumSquareR.ttf') format('truetype'),
+        url('NanumSquareR.otf') format('opentype'),
+        url('NanumSquareR.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 700;
+    src: local('NanumSquare'),
+        url('NanumSquareB.woff2') format('woff2'), 
+        url('NanumSquareB.woff') format('woff'),
+        url('NanumSquareB.ttf') format('truetype'),
+        url('NanumSquareB.otf') format('opentype'),
+        url('NanumSquareB.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NanumSquare';
+    font-style: normal;
+    font-weight: 900;
+    src: local('NanumSquare'),
+        url('NanumSquareEB.woff2') format('woff2'), 
+        url('NanumSquareEB.woff') format('woff'),
+        url('NanumSquareEB.ttf') format('truetype'),
+        url('NanumSquareEB.otf') format('opentype'),
+        url('NanumSquareEB.eot') format('embedded-opentype');
+}
+
+
+/*노토산스세리프*/
+@font-face {
+    font-family: 'NotoSerifKR';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NotoSerifKR'),
+        url('NotoSerifKR-Regular.otf') format('opentype');
+}
+@font-face {
+    font-family: 'NotoSerifKR';
+    font-style: normal;
+    font-weight: 200;
+    src: local('NotoSerifKR'),
+        url('NotoSerifKR-Light.otf') format('opentype');
+}
+
+/*노토산스*/
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 100;
+    src: local('NotoSans'),
+        url('NotoSans-Thin.woff2') format('woff2'), 
+        url('NotoSans-Thin.woff') format('woff'),
+        url('NotoSans-Thin.ttf') format('truetype'),
+        url('NotoSans-Thin.otf') format('opentype'),
+        url('NotoSans-Thin.eot') format('embedded-opentype');
+}
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 200;
+    src: local('NotoSans'),
+        url('NotoSans-Thin.woff2') format('woff2'), 
+        url('NotoSans-DemiLight.woff') format('woff'),
+        url('NotoSans-DemiLight.ttf') format('truetype'),
+        url('NotoSans-DemiLight.otf') format('opentype'),
+        url('NotoSans-DemiLight.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('NotoSans'),
+        url('NotoSans-Regular.woff2') format('woff2'), 
+        url('NotoSans-Regular.woff') format('woff'),
+        url('NotoSans-Regular.ttf') format('truetype'),
+        url('NotoSans-Regular.otf') format('opentype'),
+        url('NotoSans-Regular.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('NotoSans'),
+        url('NotoSans-Bold.woff2') format('woff2'), 
+        url('NotoSans-Bold.woff') format('woff'),
+        url('NotoSans-Bold.ttf') format('truetype'),
+        url('NotoSans-Bold.otf') format('opentype'),
+        url('NotoSans-Bold.eot') format('embedded-opentype');
+}
+
+@font-face {
+    font-family: 'NotoSans';
+    font-style: normal;
+    font-weight: 900;
+    src: local('NotoSans'),
+        url('NotoSans-Black.woff2') format('woff2'), 
+        url('NotoSans-Black.woff') format('woff'),
+        url('NotoSans-Black.ttf') format('truetype'),
+        url('NotoSans-Black.otf') format('opentype'),
+        url('NotoSans-Black.eot') format('embedded-opentype');
+}
+/*Montserrat*/
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Montserrat'),
+        url('Montserrat-SemiBold.ttf') format('ttf');
+}
+    
+    @font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Montserrat'),
+        url('Montserrat-Bold.ttf') format('ttf');
+}

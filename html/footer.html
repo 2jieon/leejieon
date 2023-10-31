@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko-KR">
+
+  <div class="inner">
+    <h2>
+        <img src="images/logo/logo_w.svg" alt="INNOSTAGE">
+    </h2>
+    <ul class="menu_list">
+        <li>
+            <a href="/html/index.html">메인</a>
+        </li>
+        <li>
+            <a class="soon" href="/html/project.html">프로젝트</a>
+        </li>
+        <li>
+            <a href="/html/portfolio.html">포트폴리오</a>
+        </li>
+        <!-- <li>
+            <a class="soon" href="#">News</a>
+        </li> -->
+        <!-- <li>
+            <a class="soon" href="#">Community</a>
+        </li> -->
+    </ul>
+
+    <ul class="address_list">
+        <li>이 름 <span style="margin: 0 10px; color: #666;">|</span> 이지언</li>
+        <li>이메일 <span style="margin: 0 10px; color: #666;">|</span> <a href="mailto:jieon5783@gmail.com">jieon5783@gmail.com</a></li>
+        <li>전화번호 <span style="margin: 0 10px; color: #666;">|</span> <a href='tel:010-5061-5783'>010-5061-5783</a></li>
+        <li>바이오사이트 <span style="margin: 0 10px; color: #666;">|</span> <a href="https://bio.site/jieon" target="_blank" style="color: #a3bdfb;">바로가기 ></a></li>
+        <br><br>
+        <li>&#8251; 본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.</li>
+    </ul>
+  </div>
+  <div class="btn_top default">
+    <a href="#">상단으로 이동</a>
+  </div>
+
+  <!-- 플로팅 메뉴 -->
+  <!-- <div class="btn_support_box open">
+    <a href="javascript:openModal('popbox');" id="popupBtn01">제안하기</a>
+  </div> -->
+
+  <!-- 플로팅 메뉴 누르면 뜨는 모달창 -->
+  <div id="modalWrap" class="popup popbox">
+    <span id="closeBtn" class="close">&times;</span>
+    <!-- <a href="http://success-camp.com/" class="go_btn" target="_blank">사이트 바로가기 ></a> -->
+    <div id="modalBody">
+      <div class="modal">
+        <div class="modal_txt">
+          <div class="modal_tit">
+            <h4>YG KPLUS</h4>
+            <p>모바일앱 시안 제작(2시간 소요)</p>
+          </div>
+          <div class="hash_list">
+            <span class="tag">기획 100%</span>
+            <span class="tag">디자인 100%</span>
+            <span class="tag bg_gray">포토샵</span>
+            <span class="tag bg_gray">일러스트</span>
+          </div>
+        </div>
+        <div class="modal_txt" style="text-align: center;">
+          <img src="images/portfolio/sub01_2.png" alt=""></br></br></br>
+        </div>
+      </div>
+    </div>
+  </div><!-- 모달창 끝 -->
+
+  <script>
+    //팝업 열기
+    function openModal(popbox) {
+      document.get
+      $("." + popbox).fadeIn(300);
+    }
+    // 팝업 닫기
+    $('.popup .close').click(function() {
+        $(this).parent().fadeOut(300);
+    });
+  </script>
+
+</body>
+</html>

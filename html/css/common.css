@@ -1,0 +1,591 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'GmarketSansMedium';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+    --font-eng: "NotoSansKR";
+    --color-point: #5dc591;
+}
+
+/* only pc */
+@media (min-width: 1181px) {
+    :root {
+        font-size: 62.5%; /* 10px */
+    }
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+button {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-size: 100%;
+    font-weight: 400;
+    font: inherit;
+    vertical-align: baseline;
+    word-break: keep-all;
+    
+}
+body {
+    overflow-x: hidden;
+    width: 100%;
+    line-height: 1;
+    color: #6b7684;
+    font-size: 1.8rem;
+    font-family: "Noto Sans KR", AppleGothic, "Malgun Gothic", "맑은 고딕", "Dotum", sans-serif;
+    letter-spacing: -1px;
+}
+
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+ol,
+ul,
+li {
+    list-style: none;
+}
+table {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+a {
+    color: #393939;
+    text-decoration: none;
+}
+em,
+address {
+    font-style: normal;
+}
+strong {
+    color: #393939;
+    font-weight: 700;
+}
+img {
+    max-width: 100%;
+    vertical-align: top;
+}
+h2,
+h3,
+h4,
+h5 {
+    color: #393939;
+    font-weight: 700;
+}
+
+/* 파일첨부 */
+.file label {
+    cursor: pointer;
+}
+/* brain 230727 */
+.file button.sbtn_gray {
+    display: none;
+}
+.file input[type="file"] {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: 0;
+    border: 0;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+}
+.file input:read-only {
+    background: #fff;
+}
+
+/* 유효성 체크*/
+input.validity {
+    border-color: #f45a5a;
+}
+p.validity {
+    margin-top: 0.8rem;
+    color: #f45a5a;
+    line-height: 1.5;
+    font-size: 1.4rem;
+}
+/* brain 230727 */
+p.validity.message {
+    color: #5dc591;
+}
+p.validity.fadeout {
+    animation: fadeout 0.5s forwards;
+}
+@keyframes fadeout {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+@media (max-width: 1180px) {
+    input[type="text"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    input[type="url"],
+    input[type="search"] {
+        padding: calc(100vw * (11 / 1180)) calc(100vw * (16 / 1180));
+        font-size: calc(100vw * (18 / 1180));
+    }
+    .radio span {
+        padding-left: calc(100vw * (30 / 1180));
+        font-size: calc(100vw * (18 / 1180));
+    }
+    .radio span::before {
+        width: calc(100vw * (24 / 1180));
+        height: calc(100vw * (24 / 1180));
+    }
+
+    .checkbox.black span {
+        padding-left: calc(100vw * (21 / 1180));
+        font-size: calc(100vw * (18 / 1180));
+    }
+    .checkbox.black span::before {
+        width: calc(100vw * (16 / 1180));
+        height: calc(100vw * (16 / 1180));
+    }
+    .checkbox.green span {
+        padding-left: calc(100vw * (28 / 1180));
+        font-size: calc(100vw * (20 / 1180));
+    }
+    .checkbox.green span::before {
+        width: calc(100vw * (24 / 1180));
+        height: calc(100vw * (24 / 1180));
+    }
+
+    .checkbox.basic span {
+        padding-left: calc(100vw * (30 / 1180));
+        font-size: calc(100vw * (18 / 1180));
+    }
+    .checkbox.basic span::before {
+        width: calc(100vw * (24 / 1180));
+        height: calc(100vw * (24 / 1180));
+    }
+
+    p.validity {
+        margin-top: calc(100vw * (8 / 1180));
+        font-size: calc(100vw * (18 / 1180));
+    }
+    .choice_box .radio {
+        margin-left: calc(100vw * (40 / 1180));
+    }
+    .choice_box.unusual .radio {
+        margin-left: calc(100vw * (63 / 1180));
+    }
+    .choice_box.unusual .checkbox {
+        margin-left: calc(100vw * (32 / 1180));
+    }
+    textarea {
+        padding: calc(100vw * (11 / 1180)) calc(100vw * (16 / 1180));
+        font-size: calc(100vw * (18 / 1180));
+    }
+    .textarea_box.type01 {
+        height: calc(100vw * (120 / 1180));
+    }
+    .textarea_box .count {
+        right: calc(100vw * (16 / 1180));
+        bottom: calc(100vw * (11 / 1180));
+        font-size: calc(100vw * (18 / 1180));
+    }
+}
+@media (max-width: 767px) {
+    input[type="text"],
+    input[type="password"],
+    input[type="tel"],
+    input[type="email"],
+    input[type="number"],
+    input[type="url"],
+    input[type="search"] {
+        padding: calc(100vw * (27 / 767)) calc(100vw * (24 / 767));
+        font-size: calc(100vw * (28 / 767));
+    }
+    .radio span {
+        padding-left: calc(100vw * (60 / 767));
+        font-size: calc(100vw * (32 / 767));
+    }
+    .radio span::before {
+        width: calc(100vw * (48 / 767));
+        height: calc(100vw * (48 / 767));
+    }
+    .checkbox.black span {
+        padding-left: calc(100vw * (44 / 767));
+        font-size: calc(100vw * (28 / 767));
+    }
+    .checkbox.black span::before {
+        width: calc(100vw * (32 / 767));
+        height: calc(100vw * (32 / 767));
+    }
+    .checkbox.green span {
+        padding-left: calc(100vw * (56 / 767));
+        font-size: calc(100vw * (36 / 767));
+    }
+    .checkbox.green span::before {
+        width: calc(100vw * (48 / 767));
+        height: calc(100vw * (48 / 767));
+    }
+
+    .checkbox.basic span {
+        padding-left: calc(100vw * (60 / 767));
+        font-size: calc(100vw * (32 / 767));
+    }
+    .checkbox.basic span::before {
+        width: calc(100vw * (48 / 767));
+        height: calc(100vw * (48 / 767));
+    }
+
+    p.validity {
+        margin-top: calc(100vw * (16 / 767));
+        font-size: calc(100vw * (28 / 767));
+    }
+    .choice_box .radio {
+        margin-left: calc(100vw * (40 / 767));
+    }
+    .choice_box.unusual .radio {
+        margin-left: calc(100vw * (95 / 767));
+    }
+    .choice_box.unusual .checkbox {
+        margin-left: calc(100vw * (40 / 767));
+    }
+
+    textarea {
+        padding: calc(100vw * (24 / 767)) calc(100vw * (24 / 767));
+        font-size: calc(100vw * (28 / 767));
+    }
+    .textarea_box.type01 {
+        height: calc(100vw * (364 / 767));
+    }
+    .textarea_box .count {
+        right: calc(100vw * (24 / 767));
+        bottom: calc(100vw * (18 / 767));
+        font-size: calc(100vw * (28 / 767));
+    }
+}
+
+/* 버튼 */
+a[class^="btn_"],
+button[class^="btn_"] {
+    display: inline-block;
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.2rem;
+    padding: 1.9rem 0;
+    text-align: center;
+    letter-spacing: -0.05em;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+a[class^="sbtn_"],
+button[class^="sbtn_"],
+label[class^="sbtn_"] {
+    display: inline-block;
+    border-radius: 0.2rem;
+    padding: 1.2rem;
+    text-align: center;
+    letter-spacing: -0.05em;
+    line-height: 1.5;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+/* brain 230726 */
+.btn_gray,
+.sbtn_gray {
+    color: #fff;
+    background: #c7c7c7;
+    /* pointer-events: none; */
+}
+
+.btn_white {
+    border-color: var(--color-point);
+    color: var(--color-point);
+    background: #fff;
+}
+.btn_green,
+.sbtn_green {
+    border-color: var(--color-point);
+    color: #fff;
+    background: var(--color-point);
+}
+
+/* 화살표블릿 버튼 */
+.btn_green .arrow {
+    position: relative;
+    padding-right: 1.5rem;
+}
+.btn_green .arrow::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 0.9rem;
+    height: 1.6rem;
+    background: url("../images/innostage/ico_arrow_white.svg") no-repeat left top / 100% 100%;
+    transform: translateY(-50%);
+}
+
+/* 테이블: 라운드 버튼*/
+a[class^="rbtn_"],
+span[class^="rbtn_"] {
+    display: inline-block;
+    border-radius: 2rem;
+    padding: 1rem 2rem;
+    text-align: center;
+    letter-spacing: -0.05em;
+    line-height: 1;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1.6rem;
+}
+.rbtn_gray {
+    background: #969696;
+}
+.rbtn_green {
+    background: #5dc591;
+}
+
+/* 버튼정렬: 중앙 버튼 2개*/
+.btn_center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.4rem;
+    margin-top: 10rem;
+}
+@media (max-width: 1180px) {
+    a[class^="btn_"],
+    button[class^="btn_"] {
+        padding: calc(100vw * (18 / 1180)) 0;
+        font-size: calc(100vw * (18 / 1180));
+    }
+    a[class^="sbtn_"],
+    button[class^="sbtn_"],
+    label[class^="sbtn_"] {
+        padding: calc(100vw * (12 / 1180)) 0 calc(100vw * (13 / 1180)) 0;
+        font-size: calc(100vw * (18 / 1180));
+    }
+    a[class^="rbtn_"],
+    span[class^="rbtn_"] {
+        padding: calc(100vw * (10 / 1180)) calc(100vw * (20 / 1180));
+        font-size: calc(100vw * (18 / 1180));
+    }
+
+    .btn_center {
+        gap: calc(100vw * (24 / 1180));
+        width: calc(100vw * (744 / 1180));
+        margin: calc(100vw * (100 / 1180)) auto 0;
+    }
+    .btn_green .arrow {
+        padding-right: calc(100vw * (15 / 1180));
+    }
+    .btn_green .arrow::after {
+        top: 49%;
+        width: calc(100vw * (9 / 1180));
+        height: calc(100vw * (16 / 1180));
+    }
+}
+@media (max-width: 767px) {
+    a[class^="btn_"],
+    button[class^="btn_"] {
+        padding: calc(100vw * (26 / 767)) 0;
+        font-size: calc(100vw * (32 / 767));
+    }
+    a[class^="sbtn_"],
+    button[class^="sbtn_"],
+    label[class^="sbtn_"] {
+        padding: calc(100vw * (29 / 767)) 0;
+        font-size: calc(100vw * (28 / 767));
+    }
+    a[class^="rbtn_"],
+    span[class^="rbtn_"] {
+        padding: calc(100vw * (10 / 767)) calc(100vw * (20 / 767));
+        font-size: calc(100vw * (24 / 767));
+    }
+    .btn_center {
+        gap: calc(100vw * (20 / 767));
+        width: 100%;
+        margin: calc(100vw * (160 / 767)) auto 0;
+    }
+    .btn_green .arrow {
+        padding-right: calc(100vw * (28 / 767));
+    }
+    .btn_green .arrow::after {
+        top: 55%;
+        width: calc(100vw * (18 / 767));
+        height: calc(100vw * (32 / 767));
+    }
+}
+
+/* 중앙정렬 */
+.inner {
+    width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 56px;
+}
+
+/* 서브 위아래 여백 */
+.sub_content {
+    min-height: 700px;
+    margin: 21rem 0 28rem;
+}
+.sub_content:is(.innostage, .portfolio, .apply, .news) {
+    margin-top: 0;
+}
+@media (max-width: 1180px) {
+    .sub_content {
+        margin: calc(100vw * (210 / 1180)) 0 calc(100vw * (280 / 1180));
+    }
+    .inner,
+    .sub_content .inner {
+        max-width: 100%;
+        padding: 0 calc(100vw * (50 / 1180));
+    }
+}
+@media (max-width: 767px) {
+    .sub_content {
+        min-height: 200px;
+        margin: calc(100vw * (192 / 767)) 0 calc(100vw * (280 / 767));
+    }
+    .inner,
+    .sub_content .inner {
+        max-width: 100%;
+        padding: 0 calc(100vw * (40 / 767));
+    }
+}
+
+/* 카테고리 선택*/
+.category {
+    display: inline-block;
+    padding: 1.1rem 2.4rem;
+    border: 1px solid var(--color-point);
+    /* border-radius: 2.4rem; */
+    border-radius: 3rem;
+    color: var(--color-point);
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: -0.08rem;
+    line-height: 1.5;
+    font-size: 1.6rem;
+    font-weight: 700;
+    background: #fff;
+}
+.category.on {
+    color: #fff;
+    background: var(--color-point);
+}
+
+@media (max-width: 1180px) {
+    .category {
+        /* padding: calc(100vw * (1.5 / 1180)) calc(100vw * (24 / 1180)); */
+        padding: calc(100vw * (10 / 1180)) calc(100vw * (24 / 1180));
+        border-radius: calc(100vw * (24 / 1180));
+        font-size: calc(100vw * (18 / 1180));
+    }
+}
+
+@media (max-width: 767px) {
+    .category {
+        padding: calc(100vw * (10 / 767)) calc(100vw * (24 / 767));
+        border-radius: calc(100vw * (30 / 767));
+        font-size: calc(100vw * (28 / 767));
+    }
+}
+
