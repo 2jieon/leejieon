@@ -32,7 +32,7 @@
 /* 마우스 이펙트 */
 .circle { position: absolute; left: 0; top: 0; z-index: 1; user-select: none; pointer-events: none; }
 @media screen and (max-width: 1200px) {
-.main .circle {display: none;}
+.circle {display: none;}
 }
 
 #wrap.main { overflow-x: hidden; background: #f5f5f5; }
