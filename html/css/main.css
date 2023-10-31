@@ -31,10 +31,13 @@
 /* --------------------------------------- */
 /* 마우스 이펙트 */
 .circle { position: absolute; left: 0; top: 0; z-index: 1; user-select: none; pointer-events: none; }
+@media screen and (max-width: 1200px) {
+.main .circle {display: none;}
+}
 
 #wrap.main { overflow-x: hidden; background: #f5f5f5; }
 section .inner { z-index: 2; height: 100vh; max-width: 100%; position: relative; overflow: hidden; }
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     section .inner { padding: 0 calc(100vw * (44 / 1180)); }
 }
 
