@@ -196,7 +196,7 @@ will-change: transform;
     .txt_box { padding-top: 10px; }
 }
 @media screen and (max-width: 991px) {
-    .skill_wrap .inner { padding-top: 170px; padding-bottom: 0; }
+    .skill_wrap .inner { padding-top: 100px; padding-bottom: 0; }
     .skill_wrap .inner .title_wrap { margin-bottom: 50px; }
     .skill_box { display: flex; flex-direction: row; width: 100%; align-items: center; margin: 0 !important; padding: 16px 0; border-bottom: 1px solid #000;}
     .skill_box:first-child { border-top: 1px solid #000; }
