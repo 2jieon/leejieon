@@ -54,7 +54,7 @@ section .inner { z-index: 2; height: 100vh; max-width: 100%; position: relative;
 color: #393939; position: absolute; top: 50%; /* left: calc((100% - 1720px) / 2); */ transform: translate(0, -50%); z-index: 1; }
 .visual_lead .lead_left, .visual_lead .lead_right { display: flex; align-items: center; position: relative; }
 
-.lead_change { width: 50px; position: relative; height: 60px; line-height: 60px; transition: 0.5s ease; overflow: hidden; padding: 0 30px; }
+.lead_change { width: 50px; position: relative; height: 70px; line-height: 70px; transition: 0.5s ease; overflow: hidden; padding: 0 30px; }
 .lead_change::before { content: "{"; position: absolute; left: 0; }
 .lead_change::after { content: "}"; position: absolute; right: 0; }
 .lead_change > div { position: absolute; display: flex; -items: center; }
