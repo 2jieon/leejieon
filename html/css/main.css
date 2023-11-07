@@ -50,7 +50,7 @@ section .inner { z-index: 2; height: 100vh; max-width: 100%; position: relative;
 /* --------------------------------------- */
 /* -------------visual section------------- */
 .visual-wrap .inner {  display: flex; align-items: flex-end; }
-.visual_lead { white-space: nowrap; display: flex; align-items: center; font-family: 'GmarketSansMedium'; font-size: 51px; font-weight: 600;
+.visual_lead { white-space: nowrap; display: flex; align-items: center; font-family: 'GmarketSansMedium'; font-size: 59px; font-weight: 600;
 color: #393939; position: absolute; top: 50%; /* left: calc((100% - 1720px) / 2); */ transform: translate(0, -50%); z-index: 1; }
 .visual_lead .lead_left, .visual_lead .lead_right { display: flex; align-items: center; position: relative; }
 
@@ -137,7 +137,7 @@ will-change: transform;
 
 .visual_bot { display: flex; align-items: flex-end; width: 100%; margin-bottom: 82px; z-index: 1; }
 .visual_bot h2 { display: flex; margin-right: auto; }
-.visual_bot h2 p { font-size: 18px; font-weight: 500; color: #393939; line-height: 1.4; position: relative; white-space: nowrap; }
+.visual_bot h2 p { font-size: 22px; font-weight: 500; color: #393939; line-height: 1.4; position: relative; white-space: nowrap; }
 .visual_bot h2 p:nth-child(1) { margin-right: 50px; }
 .visual_bot h2 p:nth-child(2) { font-weight: 500; }
 
