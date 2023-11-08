@@ -522,9 +522,9 @@ $(document).ready(function(){
             if (window.matchMedia("(min-width: 1800px)").matches) {
             visualAnim(295, 418, 255);
             } else if (window.matchMedia("(min-width: 1601px)").matches) {
-            visualAnim(294, 405, 270);
+            visualAnim(294, 408, 265);
             } else if (window.matchMedia("(min-width: 1201px)").matches) {
-            visualAnim(294, 405, 270);
+            visualAnim(294, 408, 265);
             } else if (window.matchMedia("(min-width: 769px)").matches) {
             visualAnim(275, 378, 248);
             } else if (window.matchMedia("(max-width: 768px)").matches) {
