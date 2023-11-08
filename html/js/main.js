@@ -522,13 +522,13 @@ $(document).ready(function(){
             if (window.matchMedia("(min-width: 1800px)").matches) {
             visualAnim(295, 418, 255);
             } else if (window.matchMedia("(min-width: 1601px)").matches) {
-            visualAnim(263, 370, 343);
+            visualAnim(283, 390, 363);
             } else if (window.matchMedia("(min-width: 1201px)").matches) {
-            visualAnim(263, 363, 235);
+            visualAnim(283, 390, 363);
             } else if (window.matchMedia("(min-width: 769px)").matches) {
-            visualAnim(250, 353, 223);
+            visualAnim(270, 373, 243);
             } else if (window.matchMedia("(max-width: 768px)").matches) {
-            visualAnim(250, 353, 223);
+            visualAnim(270, 373, 243);
             }
         }
 
