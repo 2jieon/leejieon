@@ -199,7 +199,7 @@
         bottom: calc(100vw * (40 / 767));
     }
     .btn_top.default {
-        top: calc(100vw * (100 / 767));
+        /*top: calc(100vw * (100 / 767));*/
         right: calc(100vw * (40 / 767));
     }
     .btn_top a {
