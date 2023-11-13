@@ -479,7 +479,6 @@ will-change: transform;
     .project_head2 { display: none; }
 }
 @media screen and (max-width: 768px) {
-    .project-wrap .inner {padding-bottom:100px;}
     .project_head .title_wrap {margin-bottom: 0;}
     .project_head .title_wrap h3 {line-height: 50px;}
     .project_body {margin-bottom: 40px;}
