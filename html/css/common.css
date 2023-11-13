@@ -518,7 +518,7 @@ span[class^="rbtn_"] {
     width: 100%;
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 56px;
+    padding: 0 4%;
 }
 
 /* 서브 위아래 여백 */
