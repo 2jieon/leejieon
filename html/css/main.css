@@ -50,7 +50,7 @@ section .inner { z-index: 2; height: 100vh; max-width: 1600px; position: relativ
 /* --------------------------------------- */
 /* -------------visual section------------- */
 .visual-wrap .inner {  display: flex; align-items: flex-end; }
-.visual_lead { white-space: nowrap; display: flex; align-items: center; font-family: 'GmarketSansMedium'; font-size: 59px; font-weight: 600;
+.visual_lead { white-space: nowrap; display: flex; align-items: center; font-family: 'GmarketSansMedium'; font-size: 55px; font-weight: 600;
 color: #393939; position: absolute; top: 50%; /* left: calc((100% - 1720px) / 2); */ transform: translate(0, -50%); z-index: 1; }
 .visual_lead .lead_left, .visual_lead .lead_right { display: flex; align-items: center; position: relative; }
 
