@@ -274,7 +274,7 @@ will-change: transform;
 /* -------------project section------------- */
 /* ----------------------------------------- */
 .project-wrap .inner { height: 100%; padding-left: 0; padding-right: 0; }
-.project-wrap .project_body { z-index: 100; position: relative; }
+.project-wrap .project_body { z-index: 2; position: relative; }
   
   .project_head,
   .estimate_head { width: 100%; display: flex; align-items: flex-end;}
