@@ -9,6 +9,7 @@
     font-style: normal;
 }
 
+.site-content-container { position:relative; overflow: hidden; }
 .main {background: #f5f5f5;}
 
 /*메인슬라이더*/
