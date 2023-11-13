@@ -273,7 +273,7 @@ will-change: transform;
 
 /* -------------project section------------- */
 /* ----------------------------------------- */
-.project-wrap .inner { height: 100%; padding-bottom: 200px; padding-left: 0; padding-right: 0; }
+.project-wrap .inner { height: 100%; padding-left: 0; padding-right: 0; }
   
   .project_head,
   .estimate_head { width: 100%; display: flex; align-items: flex-end;}
