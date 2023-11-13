@@ -520,7 +520,7 @@ $(document).ready(function(){
             animTimeouts = [];
             animIntervals = [];
             if (window.matchMedia("(min-width: 1800px)").matches) {
-            visualAnim(295, 418, 255);
+            visualAnim(255, 388, 215);
             } else if (window.matchMedia("(min-width: 1601px)").matches) {
             visualAnim(294, 408, 265);
             } else if (window.matchMedia("(min-width: 1201px)").matches) {
