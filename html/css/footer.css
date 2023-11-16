@@ -71,6 +71,9 @@
 }
 .footer .menu_list li a {
     color: #fff;
+    font-family: 'GmarketSansMedium';
+    font-size: 26px;
+    font-weight: normal;
 }
 .footer .address_list {
     margin-top: 6.6rem;
