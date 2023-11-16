@@ -520,11 +520,11 @@ $(document).ready(function(){
             animTimeouts = [];
             animIntervals = [];
             if (window.matchMedia("(min-width: 1800px)").matches) {
-            visualAnim(215, 348, 275);
+            visualAnim(255, 358, 225);
             } else if (window.matchMedia("(min-width: 1601px)").matches) {
-            visualAnim(255, 358, 225);
+            visualAnim(268, 371, 232);
             } else if (window.matchMedia("(min-width: 1201px)").matches) {
-            visualAnim(255, 358, 225);
+            visualAnim(268, 371, 232);
             } else if (window.matchMedia("(min-width: 769px)").matches) {
             visualAnim(275, 378, 248);
             } else if (window.matchMedia("(max-width: 768px)").matches) {
