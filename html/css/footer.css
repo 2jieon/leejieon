@@ -291,7 +291,7 @@
   #modalWrap .modal_txt { padding: 60px 4% 30px 4%; border-bottom: 4px solid #000; }
   #modalWrap .modal_txt h4 { font-family: 'GmarketSansBold'; font-size: 60px; line-height: 1; margin-bottom: 20px; }
   #modalWrap .modal_txt p { line-height: 1.3; padding-bottom: 30px; margin-bottom: 40px; border-bottom: 1px solid #999; }
-  #modalBody { position: relative; margin: 0px auto; width: 100%; height: 100%; background-color: #fff; overflow-y: scroll; max-widht:1750px; }
+  #modalBody { position: relative; margin: 0px auto; width: 100%; height: 80vh; background-color: #fff; overflow-y: scroll; }
   #modalBody .hash_list .tag {
     font-family: 'GmarketSansMedium'; width: auto; height: 40px; padding: 0 20px; background: #393939; color: #fff; border-radius: 30px;
     font-size: 16px; display: inline-block; line-height: 43px; transition: 0.15s ease; margin-bottom: 5px; margin-right: 3px; 
