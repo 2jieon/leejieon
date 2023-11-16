@@ -12,11 +12,6 @@
     font-style: normal;
 }
 
-:root {
-    --font-eng: "NotoSansKR";
-    --color-point: #5dc591;
-}
-
 /* only pc */
 @media (min-width: 1181px) {
     :root {
