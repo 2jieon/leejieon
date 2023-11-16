@@ -3,10 +3,10 @@
   } */
 
 @font-face {
-    font-family: 'GmarketSansMedium';
-    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
+font-family: 'GmarketSansMedium';
+src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
+font-weight: normal;
+font-style: normal;
 }
 
 .site-content-container { position:relative; overflow: hidden; }
@@ -137,7 +137,7 @@ will-change: transform;
 }
 
 .visual_bot { display: flex; align-items: flex-end; width: 100%; margin-bottom: 82px; z-index: 1; }
-.visual_bot h2 { display: flex; margin-right: auto; }
+.visual_bot h2 { display: flex; margin-right: auto; letter-spacing: -1px; }
 .visual_bot h2 p { font-size: 18px; font-weight: 500; color: #393939; line-height: 1.4; position: relative; white-space: nowrap; }
 .visual_bot h2 p:nth-child(1) { margin-right: 50px; }
 .visual_bot h2 p:nth-child(2) { font-weight: 500; }
