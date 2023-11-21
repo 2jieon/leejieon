@@ -10,7 +10,7 @@
     }
     #content:before {
         content: '';
-        background-image: url(../images/main/main04.jpg);
+        background-image: url("../images/main/main04.jpg");
         background-repeat: no-repeat;
         background-size: cover;
         position: fixed;
