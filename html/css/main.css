@@ -254,7 +254,6 @@ will-change: transform;
     height: 100%;
     z-index: 1;
 }
-
 .main .platform .platform_list li .card {padding: 60px 30px;}
 .main .platform .platform_list li .txt strong {
     line-height: 1.5;
@@ -307,7 +306,13 @@ will-change: transform;
     font-family: 'GmarketSansMedium';
     display: flex;
     align-items: center;
+    opacity: 0.3;
   }
+  .project_head .total:hover {
+    opacity: 1;
+    transition: all 0.2s;
+  }
+
   .project_head .total .num {
     font-size: 250px;
     font-weight: 600;
