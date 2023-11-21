@@ -8,9 +8,81 @@
     font-weight: normal;
     font-style: normal;
     }
-    
+    #content:before {
+        content: '';
+        background-image: url(/images/main/main04.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: fixed;
+        top:0;
+        width: 100%;
+        height: 100vh;
+    }
+    /* parallax__cont */
+    #parallax__cont {
+        overflow: hidden;
+        position: relative;
+    }
+    .parallax__item {
+        width: 100%;
+        height: 100vh;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    #section2, 
+    #section4, 
+    #section6, 
+    #section8 {
+        /* background-color: #222; */
+    }
+    .parallax__item__num {
+        position: absolute;
+        right: 20px;
+        bottom: 20px;
+        font-size: 5vw;
+        line-height: 1;
+    }
+    .parallax__item__img {
+        width: 10vw;
+        height: 10vw;
+        margin: 1vw;
+        background-color: #fff;
+        background-size: cover;
+        background-position: center;
+    }
+    #section1 .parallax__item__img {
+        background-image: url(/images/main/profil.png);
+    }
+    #section2 .parallax__item__img {
+        background-image: url(/images/main/profil.png);
+    }
+    #section3 .parallax__item__img {
+        background-image: url(/images/main/profil.png);
+    }
+    #section4 .parallax__item__img {
+        background-image: url(/images/main/profil.png);
+    }
+    #section5 .parallax__item__img {
+        background-image: url(asimages/main/profil.png);
+    }
+    #section6 .parallax__item__img {
+        background-image: url(images/main/profil.png);
+    }
+    #section7 .parallax__item__img {
+        background-image: url(images/main/profil.png);
+    }
+    #section8 .parallax__item__img {
+        background-image: url(assets/img/images08.jpg);
+    }
+    #section9 .parallax__item__img {
+        background-image: url(assets/img/images09.jpg);
+    }
+
+
     .site-content-container { position:relative; overflow: hidden; }
-    .main {background: #f5f5f5;}
+    .main {/*background: #f5f5f5;*/}
     
     /*메인슬라이더*/
     .main_slider { position: relative; overflow: hidden; background-color: #e5e9f6; padding-top: 80px; height: 100vh; height: 100dvh; }
@@ -290,6 +362,7 @@
       .estimate_head { width: 100%; display: flex; align-items: flex-end;}
       
       .project_head { margin-bottom: 57px; }
+      .project_head1 {padding-top: 200px;}
       
       .project_head .title_wrap {
         margin-right: auto;
@@ -488,6 +561,7 @@
       
     @media screen and (max-width: 991px) {
         .project_head .title_wrap h3 {line-height: 80px;}
+        .project_head1 {padding-top: 100px;}
     }
     @media screen and (min-width: 768px) {
         .project_head2 { display: none; }
@@ -674,8 +748,9 @@
     
     
     /* cooperation */
-    .main .cooperation { position: relative; height: 68.3rem; z-index: 2; }
-    .main .cooperation::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%; background: url("../images/main/main03.png") no-repeat left bottom / cover;
+    .main .cooperation { position: relative; height: 100vh; z-index: 2; }
+    .main .cooperation::before { content: ""; position: absolute; left: 0; top: 0; width: 100%; height: 100%;
+        background: url("../images/main/main03.png") no-repeat left bottom / cover;
     }
     .main .cooperation .title {
         position: relative;
@@ -719,7 +794,6 @@
     
     @media screen and (max-width: 1180px) {
         .main .cooperation {
-            height: calc(100vw * (684 / 1180));
         }
         .main .cooperation .title {
             padding-top: calc(100vw * (148 / 1180));
@@ -743,7 +817,6 @@
     
     @media screen and (max-width: 767px) {
         .main .cooperation {
-            height: calc(100vw * (750 / 767));
         }
         .main .cooperation::before {
             background-image: url("../images/main/main03.png");
