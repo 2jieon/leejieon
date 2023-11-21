@@ -829,7 +829,7 @@
             display: block;
         }
         .main .cooperation .title {
-            padding-top: calc(100vw * (180 / 767));
+            padding-top: calc(100vw * (72 / 767));
             font-size: calc(100vw * (48 / 767));
         }
         .main .cooperation .btn_area {
