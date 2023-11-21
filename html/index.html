@@ -124,11 +124,11 @@
                     <!-- canvas-wrap -->
 
                     <!-- platform -->
-                    <section class="skill_wrap">
+                    <section class="skill_wrap parallax__item" data-bgcolor="#000">
                       <div class="inner wow fadeIn" data-wow-duration="1.5s" data-wow-offset="300">
 
                         <!-- title_wrap -->
-                        <div class="title_wrap" data-bgcolor="#ddd">
+                        <div class="title_wrap">
                           <h3>Available Tools</h3>
                           <p>활용 가능한 툴입니다.</p>
                         </div>
@@ -449,6 +449,223 @@
     </div><!-- .site-content-container -->
   </div><!-- #page -->
 
+
+  <script>
+    //01 : 이미지 애니메이션 주기
+    // const ani1 = gsap.timeline();
+    // ani1.to("#section1 .parallax__item__img", {rotation: 720, scale: 0, borderRadius: 200})
+    //     .to("#section1 .parallax__item__img", {rotation: 0, scale: 1, borderRadius: 20})
+
+    // ScrollTrigger.create({
+    //     animation: ani1,
+    //     trigger: "#section1",
+    //     start: "top top",
+    //     end: "+=2000",
+    //     scrub: true,
+    //     pin: true, 
+    //     anticipatePin: 1,
+    //     markers: true
+    // });
+
+    //02 : 이미지를 순차적으로 나오기 
+    // const ani2 = gsap.timeline();
+    // ani2.from("#section2 .i1", {y: -100, autoAlpha:0, borderRadius: 200})
+    //     .from("#section2 .i2", {y: 100, autoAlpha:0, borderRadius: 200})
+    //     .from("#section2 .i3", {y: -100, autoAlpha:0, borderRadius: 200})
+
+    // ScrollTrigger.create({
+    //     animation: ani2,
+    //     trigger: "#section2",
+    //     start: "top top",
+    //     end: "+=2000",
+    //     scrub: true,
+    //     pin: true, 
+    //     anticipatePin: 1,
+    //     markers: true
+    // });
+
+    //03 : 이미지를 랜덤으로 나오기
+    const ani3 = gsap.timeline();
+    ani3.from("#section3 .parallax__item__img", {
+        autoAlpha: 0,
+        y: -100,
+        ease: "back.out(4)",
+        // stagger: 0.1
+        stagger: {
+            amount: 3,
+            from: "random"
+        }
+    });
+
+    ScrollTrigger.create({
+        animation: ani3,
+        trigger: "#section3",
+        start: "top top",
+        end: "+=3000",
+        scrub: true,
+        pin: true, 
+        anticipatePin: 1,
+        markers: true
+    });
+
+    //04 : 이미지 축소하기
+    const ani4 = gsap.timeline();
+    ani4.from("#section4 .parallax__item__img", {
+        autoAlpha: 0,
+        scale: 5,
+        width: "100vw",
+        height: "100vh"
+    });
+
+    ScrollTrigger.create({
+        animation: ani4,
+        trigger: "#section4",
+        start: "top top",
+        end: "+=3000",
+        scrub: true,
+        pin: true, 
+        anticipatePin: 1,
+        markers: true
+    });
+
+    //05 : 텍스트 애니메이션
+    const ani5 = gsap.timeline();
+    ani5.to("#section5 .t1", {xPercent: 300}, "text")
+        .to("#section5 .t2", {xPercent: -300}, "text")
+        .to("#section5 .t3", {xPercent: 300}, "text")
+        .to("#section5 .t4", {xPercent: -300}, "text");
+
+    ScrollTrigger.create({
+        animation: ani5,
+        trigger: "#section5",
+        start: "top top",
+        end: "+=3000",
+        scrub: true,
+        pin: true, 
+        anticipatePin: 1,
+        markers: true
+    });
+
+    //06 : 텍스트 확대하기
+    const ani6 = gsap.timeline();
+    ani6.to("#section6 .parallax__item__text", {scale: 60, duration: 2})
+        .to("#section6 .parallax__item__text", {autoAlpha: 0})
+
+    ScrollTrigger.create({
+        animation: ani6,
+        trigger: "#section6",
+        start: "top top",
+        end: "+=4000",
+        scrub: true,
+        pin: true, 
+        anticipatePin: 1,
+        markers: true
+    });
+
+    //07 : 텍스트 제자리 애니메이션
+    const ani7 = gsap.timeline();
+    ani7.from("#section7 .t1", {autoAlpha:0, duration: 1, y: 50}, "+=1")
+        .from("#section7 .t2", {autoAlpha:0, duration: 1, y: 50}, "+=1")
+        .from("#section7 .t3", {autoAlpha:0, duration: 1, y: 50}, "+=1")
+        .from("#section7 .t4", {autoAlpha:0, duration: 1, y: 50}, "+=1")
+        .from("#section7 .t5", {autoAlpha:0, duration: 1, y: 50}, "+=1")
+        .from("#section7 .t6", {autoAlpha:0, duration: 1, y: 50}, "+=1")
+        .from("#section7 .t7", {autoAlpha:0, duration: 1, y: 50}, "+=1")
+
+    ScrollTrigger.create({
+        animation: ani7,
+        trigger: "#section7",
+        start: "top top",
+        end: "+=6000",
+        scrub: true,
+        pin: true, 
+        anticipatePin: 1,
+        markers: true
+    });
+
+    //08 : 텍스트 애니메이션 
+    const ani8 = gsap.timeline();
+    ani8.from("#section8 .t1", {x: innerWidth * 1})
+        .from("#section8 .t2", {x: innerWidth * -1})
+        .from("#section8 .t3", {x: innerWidth * 1})
+        .from("#section8 .i1", {x: innerWidth * 1, rotation: 360, scale: 5.5})
+
+    ScrollTrigger.create({
+        animation: ani8,
+        trigger: "#section8",
+        start: "top top",
+        end: "+=4000",
+        scrub: true,
+        pin: true, 
+        anticipatePin: 1,
+        markers: true
+    });
+
+    //09 : 이미지 확대하기 
+    const ani9 = gsap.timeline();
+    ani9.to("#section9 .parallax__item__img", {scale: 13})
+        .to("#section9 .parallax__item__img", {autoAlpha: 0})
+
+    ScrollTrigger.create({
+        animation: ani9,
+        trigger: "#section9",
+        start: "top top",
+        end: "+=4000",
+        scrub: true,
+        pin: true,
+        markers: false,
+        anticipatePin: 1
+    });
+
+
+    
+    // 범위 랜덤 함수(소수점 2자리까지/둥둥떠있는듯한애니메이션효과)
+    function random(min, max) {
+    // `.toFixed()`를 통해 반환된 문자 데이터를,
+    // `parseFloat()`을 통해 소수점을 가지는 숫자 데이터로 변환
+    return parseFloat((Math.random() * (max - min) + min).toFixed(2))
+    }
+
+    function floatingObject(selector,delay,size){
+    // gsap.to(요소, 시간, 옵션)
+    gsap.to(selector, random(1.5,2.5), {
+        y: size,
+        repeat: -1, // -1 무한반복
+        yoyo: true, // 애니메이션 되돌아오기(설정안할 시 끈킴)
+        ease: Power1.easeInOut, // 타이밍함수
+        delay: random(0,delay) // 지연시간
+    })
+    }
+    floatingObject('.img_01',.6,10)
+    floatingObject('.img_02',.3,10)
+    floatingObject('.img_03',1,15)
+    floatingObject('.img_04',.6,10)
+    floatingObject('.img_05',.3,10)
+    floatingObject('.img_06',1,15)
+
+
+
+    // 스크롤해서 배경색바꾸기
+    gsap.utils.toArray(".parallax__item").forEach((item) => {
+      let color = item.getAttribute("data-bgcolor");
+
+      ScrollTrigger.create({
+        trigger: item,
+        start: "top 50%",
+        end: "bottom 50%",
+        markers: true,
+
+        onEnter: () => gsap.to("main", {
+            backgroundColor: color,
+            duration: 1.4,
+        }),
+        onEnterBack: () => gsap.to("main", {
+            backgroundColor: color,
+            duration: 1.4,
+        }),
+      });
+    });
+  </script>
   <script>
     $("#header").load("https://2jieon.github.io/leejieon/html/header.html");
     $("#footer").load("https://2jieon.github.io/leejieon/html/footer.html");
@@ -457,3 +674,83 @@
 </body>
 
 </html>
+
+<script type="text/javascript" defer="" src="https://www.kyobolifeinnostage.co.kr/wp-content/plugins/koko-analytics/assets/dist/js/script.js?ver=1.0.38" id="koko-analytics-js"></script>
+<script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/init.js?ver=6.2" id="theme-js-init-js"></script>
+<script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/common.js?ver=6.2" id="theme-js-common-js"></script>
+<script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/extend.a.js?ver=6.2" id="theme-js-extend-js"></script>
+    <link rel="stylesheet" href="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/css/aos.css">
+    <script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/aos.js"></script>
+    <script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/swiper.min.js"></script>
+    <script type="text/javascript" src="https://www.kyobolifeinnostage.co.kr/wp-content/themes/kyobolife/assets/js/jquery.marquee.min.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            AOS.init({
+               //disable: false,
+               //offset: 300,
+               duration: 800,
+               easing: 'ease',
+               once: true,
+               //delay: 200,
+            });
+            // 모바일에서 플로팅 메뉴 숨김
+            if(isMobileTablet()) {
+                $('.btn_support_box').hide();
+            }
+
+            $(window).on('scroll', function() {
+
+                // 플로팅 접기
+                if($(window).scrollTop() > 300) {
+                    $('.btn_support_box').removeClass('open');
+                }
+
+
+                if($(window).scrollTop() > 5) {
+                    $('.btn_top').addClass('on');
+                    // 0728 플로팅 메뉴 추가
+                    $('.btn_support').addClass('on');
+                    $('.btn_support_center').addClass('on');
+                    // $('.btn_support_box').removeClass('open');
+
+                } else {
+                    $('.btn_top').removeClass('on');
+                    // 0728 플로팅 메뉴 추가
+                    $('.btn_support').removeClass('on');
+                    $('.btn_support_center').removeClass('on');
+                }
+
+                if($(window).scrollTop() >= $(document).height() - $(window).height()) { 
+                    $('.btn_top').addClass('default');
+                    $('.btn_top').removeClass('on');
+                    // 0728 플로팅 메뉴 추가
+                    $('.btn_support').addClass('default');
+                    $('.btn_support').removeClass('on');
+                    $('.btn_support_center').addClass('default');
+                    $('.btn_support_center').removeClass('on');
+                } else {
+                    $('.btn_top').removeClass('default');
+                    // 0728 플로팅 메뉴 추가
+                    $('.btn_support').removeClass('default');
+                    $('.btn_support_center').removeClass('default');
+                }
+
+                if(isMobile()){
+                    if($(window).scrollTop() >= $('.footer h2').offset().top - $(window).height()) {
+                        $('.btn_top').addClass('default');
+                        $('.btn_top').removeClass('on');
+                        // 0728 플로팅 메뉴 추가
+                        $('.btn_support').addClass('default');
+                        $('.btn_support').removeClass('on');
+                        $('.btn_support_center').addClass('default');
+                        $('.btn_support_center').removeClass('on');
+                    } else {
+                        $('.btn_top').removeClass('default');
+                        // 0728 플로팅 메뉴 추가
+                        $('.btn_support').removeClass('default');
+                        $('.btn_support_center').removeClass('default');
+                    }
+                }
+            })
+        })
+    </script>
