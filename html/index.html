@@ -450,27 +450,6 @@
   </div><!-- #page -->
 
   <script>
-
-      // 스크롤해서 배경색바꾸기
-      gsap.utils.toArray(".parallax__item").forEach((item) => {
-      let color = item.getAttribute("data-bgcolor");
-
-      ScrollTrigger.create({
-        trigger: item,
-        start: "top 50%",
-        end: "bottom 50%",
-        markers: true,
-
-        onEnter: () => gsap.to("main", {
-            backgroundColor: color,
-            duration: 1.4,
-        }),
-        onEnterBack: () => gsap.to("main", {
-            backgroundColor: color,
-            duration: 1.4,
-        }),
-      });
-
     $("#header").load("https://2jieon.github.io/leejieon/html/header.html");
     $("#footer").load("https://2jieon.github.io/leejieon/html/footer.html");
   </script>
