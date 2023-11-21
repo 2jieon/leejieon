@@ -15,7 +15,7 @@
     opacity: 1;
 }
 .btn_top.default {
-    position: fixed;
+    position: absolute;
     right: 5.6rem;
     bottom: 6.8rem;
     pointer-events: auto;
